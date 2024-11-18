@@ -29,6 +29,9 @@ public class InstrumentoMusical {
     public boolean getElectronico() {
         return electronico;
     }
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
     /**
      * Disminulle el año de fabricación para que el instrumento envejezca
      */
@@ -41,13 +44,4 @@ public class InstrumentoMusical {
     public void invertirElectronico() {
         electronico = !electronico;
     }
-
-
-
-
-
-
-
-
-
 }
