@@ -44,4 +44,24 @@ public class InstrumentoMusical {
     public void invertirElectronico() {
         electronico = !electronico;
     }
+    public void imprimirEstado() {
+        String electronicoEsp;
+        if (electronico == true) {
+            electronicoEsp = "Sí";
+        }
+        else {
+            electronicoEsp = "No";
+        }
+        System.out.println("Nombre: " + nombre + " | Año de fabricación: " + anoDeFabricacion + " | Electrónico: " + electronicoEsp);
+    }
+    public String getEstado() {
+        String electronicoEsp;
+        if (electronico == true) {
+            electronicoEsp = "Sí";
+        }
+        else {
+            electronicoEsp = "No";
+        }
+        return("Nombre: " + nombre + " | Año de fabricación: " + anoDeFabricacion + " | Electrónico: " + electronicoEsp);
+    }
 }
