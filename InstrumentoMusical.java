@@ -6,10 +6,10 @@ public class InstrumentoMusical {
     // Indica si el instrumento es Electrónico
     private boolean electronico;
 
-    public InstrumentoMusical(String nombre, boolean electronico) {
+    public InstrumentoMusical(String nombre, int anoDeFabricacion) {
         this.nombre = nombre;
-        this.anoDeFabricacion = 2007;
-        this.electronico = electronico;
+        this.anoDeFabricacion = anoDeFabricacion;
+        this.electronico = true;
     }
     /**
      * Devuelve el nombre del instrumento
